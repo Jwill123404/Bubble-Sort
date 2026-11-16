@@ -12,7 +12,7 @@ public class Search{
 	public static void main(String[] args){
 		Scanner in = new Scanner(System.in);
 		
-		System.out.print("Choose how many numbers to be sorted, ideally between 3 and 15: ");
+		System.out.print("Choose how many numbers to be sorted, ideally between 2 and 15: ");
 		int n = in.nextInt();
 		in.nextLine();
 		
