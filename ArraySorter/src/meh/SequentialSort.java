@@ -10,6 +10,15 @@ public class SequentialSort{
 	 */
 	public static boolean sortOne(int[] nums){
 		boolean sorted = true;
+		for(int i2 = 0; i2 < nums.length - 1; i2++){//checks the array to see if they're all sorted
+			if(nums[i2] > nums[i2 + 1]){//if there's a single unsorted position in the array, the loop breaks
+				sorted = false;
+				break;
+			}
+		}
+		if(sorted){//if the previous check never breaks, then this returns the fully sorted loop and states that it's sorted
+			return true;
+		}
 		
 		for(int i = 0; i < nums.length - 1; i++){//cycles through the array
 			totalChecks++;//increments totalChecks
